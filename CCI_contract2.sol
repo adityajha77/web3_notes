@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+interface IStorage {
+function getNum() external view returns(uint);
+function add() external;
+}
+contract Contract2{
+    constructor(){
+    }
+    
+    function proxyAdd() public {
+        IStorage(0xcAfF25FD2D2B5824930bA1d885901f1a58cC2A24).add();
+    }
+    function publicGet() public view returns(uint){
+        uint value= IStorage(0xcAfF25FD2D2B5824930bA1d885901f1a58cC2A24).getNum();
+        return value;
+    }
+}
