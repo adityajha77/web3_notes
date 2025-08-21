@@ -1,8 +1,9 @@
 assignments
-
-
-
-
+test approval
+test minting
+----------------------
+user tries to spend token that not have
+user tries to pay on someone elese behalf that they dont have
 
 -----------------test contract--------------------------------
 // SPDX-License-Identifier: MIT
